@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey_back"
+    android:id="@+id/rel"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.skylinelabs.Kym.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="650px"
+                    android:background="@android:color/white"
+                    android:layout_marginLeft="6dp"
+                    android:elevation="1.5dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/relativeLayout2">
+
+
+
+                    <ImageView
+                        android:layout_width="550px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/gopay_icon"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Large Text"
+                        android:textSize="30sp"
+                        android:id="@+id/textView9"
+                        android:layout_alignBottom="@+id/imageView2"
+                        android:layout_marginRight="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/colorPrimary"
+
+                        android:layout_marginBottom="32dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rupiah "
+                        android:id="@+id/textView10"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignBottom="@+id/imageView2"
+                        android:layout_alignEnd="@+id/textView9"
+                        android:layout_marginBottom="12dp" />
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1100px"
+                    android:background="@android:color/white"
+                    android:layout_below="@+id/relativeLayout2"
+                    android:layout_marginLeft="6dp"
+                    android:elevation="1.5dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/relativeLayout">
+
+
+
+                    <View
+                        android:gravity="center"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+
+                        android:id="@+id/view2"
+                        android:layout_alignParentTop="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        android:text="Credit Summary"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/textView12"
+                        android:layout_alignBottom="@+id/view2"
+                        android:layout_alignParentStart="true" />
+
+
+                    <org.eazegraph.lib.charts.PieChart
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/piechart"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="60dp"
+                        android:padding="8dp"
+                        app:egLegendTextSize="18sp"
+                        app:egUsePieRotation="true"
+                        app:egValueTextSize="36sp"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="310px"
+                    android:background="@android:color/white"
+                    android:id="@+id/relativeLayout3"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_marginTop="10dp"
+                   >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button"
+                        android:layout_marginRight="50dp"
+                        android:textSize="20sp"
+                        android:background="@android:color/transparent"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignEnd="@+id/imageView4" />
+
+
+                    <View
+                        android:id="@+id/center_divider"
+                        android:layout_width="1px"
+                        android:layout_height="0dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="8dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="#000000" />
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:id="@+id/button2"
+                        android:background="@android:color/transparent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_alignParentStart="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/add_money_black"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_alignEnd="@+id/center_divider"
+                        android:layout_alignBottom="@+id/button2" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView4"
+                        android:src="@drawable/pay_black"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/center_divider"
+                        android:layout_alignBottom="@+id/button" />
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

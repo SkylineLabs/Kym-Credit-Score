@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="Summary" />
+            <!--android:icon="@drawable/ic_menu_camera"-->
+
+        <item
+            android:id="@+id/chat_bot"
+            android:title="Kym" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/tutorial"
+            android:title="Tutorial" />
+    </group>
+
+    <!--item android:title="Extras">
+        <menu>
+            <item
+                android:id="@+id/tutorial"
+                android:title="Tutorial" />
+        </menu>
+    </item-->
+
+</menu>

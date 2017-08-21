@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:showIn="@layout/app_bar_chat"
+    android:id="@+id/rel"
+     android:layout_marginTop="50dp"
+    tools:context=".ChatActivity"
+ >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/kym_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <EditText
+            android:id="@+id/messageEdit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:autoText="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="2dp"
+
+            android:background="@drawable/untitled_4"
+            android:hint="Type message" />
+
+
+
+        <ListView
+            android:id="@+id/messagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@+id/messageEdit"
+
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="alwaysScroll"
+            android:divider="@null" />
+
+        <ImageView
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mic"
+            android:paddingBottom="5dp"
+            android:elevation="4dp"
+        android:id="@+id/micButton"
+        android:layout_alignTop="@+id/messageEdit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="80dp"/>
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send"
+            android:elevation="4dp"
+
+            android:id="@+id/sendButton"
+            android:layout_alignTop="@+id/messageEdit"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="5dp"
+            android:layout_marginEnd="30dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

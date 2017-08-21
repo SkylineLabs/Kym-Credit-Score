@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:id="@+id/rel2">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/lin"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+
+        android:baselineAligned="false"
+        android:weightSum="1"
+        android:layout_above="@+id/textView5">
+
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="false"
+            android:background="@android:color/white"
+            android:layout_alignParentTop="true" >
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Go"
+        android:id="@+id/textView5"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/gopay_icon"
+        android:layout_above="@+id/rel"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+
+        android:id="@+id/rel"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/fNameLayoutName"
+            android:layout_width="300dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/fNameLayoutContact"
+            android:layout_alignStart="@+id/fNameLayoutContact"
+            android:layout_alignRight="@+id/fNameLayoutContact"
+            android:layout_alignEnd="@+id/fNameLayoutContact">
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:color="@android:color/white"
+                android:singleLine="true"
+                android:layout_centerHorizontal="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/fNameLayoutEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fNameLayoutName"
+            android:layout_centerHorizontal="true"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextEmail"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+
+                android:color="@android:color/white"
+                android:hint="Email"
+                android:ems="10"
+                android:singleLine="true"
+                android:layout_centerHorizontal="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/fNameLayoutContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fNameLayoutEmail"
+            android:layout_centerHorizontal="true"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextTwitter"
+                android:textColor="@color/colorPrimary"
+
+                android:hint="Twitter handle"
+                android:color="@android:color/white"
+                android:ems="10"
+                android:singleLine="true"
+                android:layout_centerHorizontal="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
